@@ -1,1 +1,1 @@
-Hello there you can see my journey in Machine Learning using Python
+Hello there! Here you can see my journey in Machine Learning using Python
