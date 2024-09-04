@@ -12,3 +12,19 @@ XTrain, XTest, yTrain, yTest = train_test_split(X, y, test_size= 0.2, random_sta
 
 regressor = LinearRegression()
 regressor.fit(XTrain, yTrain)
+
+yPred = regressor.predict(XTest)
+
+plt.scatter(XTrain, yTrain, color = 'red')
+plt.plot(XTrain, regressor.predict(XTrain), color = 'blue')
+plt.title('Salary vs Experience (training set)')
+plt.xlabel('Years of Expereience')
+plt.ylabel('Salary')
+plt.show()
+
+plt.scatter(XTest, yTest, color = 'red')
+plt.plot(XTrain, regressor.predict(XTrain), color = 'blue')
+plt.title('Salary vs Experience (test set)')
+plt.xlabel('Years of Expereience')
+plt.ylabel('Salary')
+plt.show()
