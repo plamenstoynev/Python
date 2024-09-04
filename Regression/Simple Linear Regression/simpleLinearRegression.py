@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 
-dataSet = pd.read_csv("../../Simple Linear Regression/simpleLinearRegression.py")
+dataSet = pd.read_csv("Regression/Simple Linear Regression/Salary_Data.csv")
 X = dataSet.iloc[:, :-1].values
 y = dataSet.iloc[:, -1].values
 
