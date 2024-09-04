@@ -5,8 +5,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.impute import SimpleImputer
 
 # Loading the Iris dataset
-dataset = pd.read_csv('/Users/plamenstoynev/OneDrive/Python/Data Preprocessing/iris.csv')
-
+dataset = pd.read_csv("Data Preprocessing/Importing DataSet/iris.csv")
 # Creating the matrix of features (X) and the dependent variable vector (y)
 x = dataset.iloc[:, :-1].values
 y = dataset.iloc[:, -1].values
